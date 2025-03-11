@@ -75,7 +75,7 @@ const Sidebar = () => {
           <Link to="/blog" className="flex gap-2  hover:text-green-800">
             <FaBlog className="mt-1" /> <span className="">Blog</span>
           </Link>
-          <Link className="flex gap-2  hover:text-green-800">
+          <Link to="/contact" className="flex gap-2  hover:text-green-800">
             <MdContacts className="mt-1" /> <span className="">Contact</span>
           </Link>
           <Link
@@ -89,24 +89,39 @@ const Sidebar = () => {
           </Link>
           {showMore && (
             <div className="flex flex-col bg-green-500">
-              <div className="py-1 flex justify-center hover:bg-green-300 w-full">
+              <Link
+                to="/project-page"
+                className="py-1 flex justify-center hover:bg-green-300 w-full"
+              >
                 Project Page
-              </div>
-              <div className="py-1 flex justify-center hover:bg-green-300 w-full">
+              </Link>
+              <Link
+                to="/blog"
+                className="py-1 flex justify-center hover:bg-green-300 w-full"
+              >
                 Blog Home 1
-              </div>
-              <div className="py-1 flex justify-center hover:bg-green-300 w-full">
+              </Link>
+              <Link
+                to="/blog"
+                className="py-1 flex justify-center hover:bg-green-300 w-full"
+              >
                 Blog Home 2
-              </div>
-              <div className="py-1 flex justify-center hover:bg-green-300 w-full">
+              </Link>
+              <Link
+                to="/blog-post"
+                className="py-1 flex justify-center hover:bg-green-300 w-full"
+              >
                 Blog Post
-              </div>
+              </Link>
             </div>
           )}
 
-          <div className="bg-green-800 hover:bg-green-950 px-4 py-2 gap-2 flex mx-auto rounded-md">
+          <Link
+            to="/contact"
+            className="bg-green-800 hover:bg-green-950 px-4 py-2 gap-2 flex mx-auto rounded-md"
+          >
             <FaTelegramPlane className="mt-1" /> <span>Hire Me</span>
-          </div>
+          </Link>
         </div>
 
         <div className="mt-6 flex flex-col items-center">

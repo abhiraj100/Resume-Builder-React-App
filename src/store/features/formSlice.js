@@ -79,8 +79,8 @@ const formSlice = createSlice({
 
     updateExpChange: (state, action) => {
       console.log(action.payload);
-      const { index, name, value } = action.payload;
-      state.experience[index][name] = value;
+      const { index, name:key, value } = action.payload;
+      state.experience[index][key] = value;
     },
 
     addProjectField: (state, action) => {

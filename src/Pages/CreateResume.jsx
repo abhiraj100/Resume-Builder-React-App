@@ -27,7 +27,9 @@ const CreateResume = () => {
   const form = useSelector((state) => state.form);
 
   const handleChange = (e) => {
-    dispatch(updateField({ name: e.target.name, value: e.target.value }));
+    const { name, value } = e.target;
+    // dispatch(updateField({ name: e.target.name, value: e.target.value }));
+    dispatch(updateField({ name, value }));
   };
 
   const handleImageChange = (event) => {

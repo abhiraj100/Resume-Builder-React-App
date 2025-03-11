@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaTelegramPlane } from "react-icons/fa";
-import Footer from "../components/Layout/Footer";
 
 const details = [
   {
